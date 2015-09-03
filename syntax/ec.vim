@@ -18,7 +18,7 @@ endif
 
 " eC extensions 
 syn keyword     ecStatement     new this delete import define incref decref
-syn keyword     ecType          virtual property bool 
+syn keyword     ecType          virtual property bool String uint
 syn keyword     ecProperty      get set 
 syn keyword     ecVisibility    static private public
 syn keyword     ecStructure     class dbtable
