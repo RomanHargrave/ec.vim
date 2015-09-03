@@ -23,6 +23,7 @@ syn keyword     ecProperty      get set
 syn keyword     ecVisibility    static private public
 syn keyword     ecStructure     class dbtable
 syn keyword     ecBoolean       true false 
+syn keyword     ecConstant      null  
 
 if version >= 508 || !exists("did_ec_syntax_inits")
     if version < 508
@@ -38,6 +39,7 @@ if version >= 508 || !exists("did_ec_syntax_inits")
     HiLink  ecVisibility    StorageClass
     HiLink  ecStructure     Structure 
     HiLink  ecBoolean       Boolean 
+    HiLink  ecConstant      Constant
 
     delcommand HiLink
 endif 
