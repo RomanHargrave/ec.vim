@@ -19,14 +19,16 @@ endif
 " eC extensions 
 syn keyword     ecStatement     new this delete import define incref decref namespace 
 syn keyword     ecType          virtual property bool String 
-syn keyword     ecType          uint unichar byte 
+syn keyword     ecType          uint uint64 unichar byte 
 syn keyword     ecProperty      get set  
 syn keyword     ecProperty      class_property class_data
 syn keyword     ecVisibility    static private public 
 syn keyword     ecStructure     class dbtable
 syn keyword     ecBoolean       true false 
 syn keyword     ecConstant      null  
-syn match       ecTransString   "$\@=\""
+
+"Not behaving for now. VIM expressions are wierd 
+"syn match       ecTransString   "$\@=\""
 
 if version >= 508 || !exists("did_ec_syntax_inits")
     if version < 508
@@ -43,7 +45,7 @@ if version >= 508 || !exists("did_ec_syntax_inits")
     HiLink  ecStructure     Structure 
     HiLink  ecBoolean       Boolean 
     HiLink  ecConstant      Constant
-    HiLink  ecTransString   Operator 
+"   HiLink  ecTransString   Operator 
 
     delcommand HiLink
 endif 
