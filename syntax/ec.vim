@@ -29,7 +29,9 @@ syn keyword     ecBoolean       true false
 syn keyword     ecConstant      null 
 
 " eC "primitive" data types 
-syn keyword     ecType          uint uint16 uint64 unichar byte 
+syn keyword     ecType          uint uint16 uint64 byte
+syn keyword     ecType          int int16 int64
+syn keyword     ecType          unichar
 
 " eC data type bounds
 syn keyword     ecConstant      MAXBYTE MAXWORD MININT MAXINT MININT64 MAXINT64 MAXDWORD MAXQWORD
