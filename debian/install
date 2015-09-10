@@ -1,0 +1,2 @@
+ftdetect/ec.vim usr/share/vim/addons/ftdetect
+syntax/ec.vim usr/share/vim/addons/syntax

@@ -1,0 +1,16 @@
+Source: vim-syntax-ec
+Section: devel
+Priority: optional
+Maintainer: Roman Hargrave <roman@hargrave.info>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: https://github.com/romanhargrave/ec.vim
+Vcs-Git: git://github.com/romanhargrave/ec.vim.git
+Vcs-Browser: https://github.com/romanhargrave/ec.vim
+
+Package: vim-syntax-ec
+Architecture: all
+Depends: vim 
+Recommends: vim-addon-manager 
+Description: eC syntax definitions for Vim
+ This package provides vim syntax highligting for eC source files.
